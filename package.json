@@ -27,8 +27,7 @@
     "prepublish": "npm run --if-present build",
     "precommit": "lint-staged",
     "postcommit": "git reset",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
-    "prepare": "git config --local core.hooksPath .githooks"
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\""
   },
   "keywords": [
     "textlint",
