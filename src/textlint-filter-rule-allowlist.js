@@ -1,12 +1,12 @@
 import path from "path";
-import { rcFile } from "rc-config-loader";
 import { getConfigBaseDir } from "@textlint/get-config-base-dir";
 import { matchPatterns } from "@textlint/regexp-string-matcher";
 
 const getAllowWordsFromFiles = (files, baseDirectory) => {
     let results = [];
+    // TODO: use other loader
+    const { rcFile } = require("rc-config-loader");
     files.forEach((filePath) => {
-        // TODO: use other loader
         const contents = rcFile("file", {
             configFileName: path.resolve(baseDirectory, filePath)
         });
