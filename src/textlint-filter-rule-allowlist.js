@@ -39,9 +39,10 @@ export default function (context, options) {
     const { Syntax, shouldIgnore, getSource } = context;
     const baseDirectory = getConfigBaseDir(context) || process.cwd();
     const allowWords = options.allow || defaultOptions.allow;
-    const allowlistConfigPaths = options.allowlistConfigPaths
-        ? getAllowWordsFromFiles(options.allowlistConfigPaths, baseDirectory)
-        : [];
+    let allowlistConfigPaths = [];
+    if (options.allowlistConfigPaths) {
+        allowlistConfigPaths = getAllowWordsFromFiles(options.allowlistConfigPaths, baseDirectory);
+    }
     const allAllowWords = allowWords.concat(allowlistConfigPaths);
     return {
         [Syntax.Document](node) {
