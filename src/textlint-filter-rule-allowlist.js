@@ -6,6 +6,7 @@ const getAllowWordsFromFiles = (files, baseDirectory) => {
     let results = [];
     // TODO: use other loader
     const { rcFile } = require("rc-config-loader");
+    require("node-module-polyfill");
     files.forEach((filePath) => {
         const contents = rcFile("file", {
             configFileName: path.resolve(baseDirectory, filePath)

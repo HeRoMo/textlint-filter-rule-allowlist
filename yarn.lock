@@ -1208,6 +1208,11 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/node@^12.7.8":
+  version "12.20.15"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.15.tgz#10ee6a6a3f971966fddfa3f6e89ef7a73ec622df"
+  integrity sha512-F6S4Chv4JicJmyrwlDkxUdGNSplsQdGwp1A0AJloEVDirWdZOAiRHhovDlsFkKUrquUXhz1imJhXHsf59auyAg==
+
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
@@ -3373,6 +3378,14 @@ nanomatch@^1.2.9:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
+
+node-module-polyfill@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/node-module-polyfill/-/node-module-polyfill-1.0.1.tgz#0863b1486869e73df30b4a3050b0da59c6aeab95"
+  integrity sha512-ScK3fK8UAlhG9Dm9egLZrjCDy0VPtBVwGta4pi1UrQE1JqfMFzDfltg8ERTZLKOnW6Se46PSgpSTgW5hEtvYww==
+  dependencies:
+    "@types/node" "^12.7.8"
+    semver "^6.3.0"
 
 node-modules-regexp@^1.0.0:
   version "1.0.0"
